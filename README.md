@@ -1,4 +1,4 @@
-# HP Email Design System
+# OCSP Email Design System
 
 This mono-repo contains two projects:
 
