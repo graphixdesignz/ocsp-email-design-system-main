@@ -1,0 +1,44 @@
+import ConfirmationShipping, {
+    Features,
+    template,
+} from "../../components/recipes/ConfirmationShipping";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Shipping Recipe: Shipping Info
+
+This recipe informs users about the status of their shipment and provides relevant tracking information using simple copy, images, and order details.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/3d07113"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent
+    label="confirmationshipping"
+    Component={ConfirmationShipping}
+/>
+
+## HTML
+
+<PreviewMarkup label="confirmationshipping" template={template} />

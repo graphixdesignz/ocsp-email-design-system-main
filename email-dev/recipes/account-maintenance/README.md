@@ -1,0 +1,2 @@
+-   Standard: https://litmus.com/checklist/emails/public/1faedf8
+-   Detail: https://litmus.com/checklist/emails/public/e7c0768

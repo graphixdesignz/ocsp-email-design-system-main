@@ -1,0 +1,28 @@
+import Spacer, { template } from "../../components/email/Spacer";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+
+export default ({ inline, children }) => (
+    <PreviewLayout inline={inline}>{children}</PreviewLayout>
+);
+
+# Vertical Spacer
+
+A full-width vertical spacer. Create white space between rows in a layout.
+
+Provide a custom height or background color where needed
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/061e329"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Preview
+
+<Spacer />
+
+## HTML
+
+<Markup html={template()} />

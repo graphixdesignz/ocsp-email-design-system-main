@@ -1,0 +1,43 @@
+import HeroHeadline, {
+    Features,
+    template,
+} from "../../components/email/HeroHeadline";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Hero Headline
+
+Pair a "hero" image with headline, subhead, body copy, and a CTA as an introduction to an email.
+
+Most components are optional, except for the headline.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/62e25df"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="heroheadline" Component={HeroHeadline} />
+
+## HTML
+
+<PreviewMarkup label="heroheadline" template={template} />

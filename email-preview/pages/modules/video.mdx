@@ -1,0 +1,47 @@
+import Media, { Features, template } from "../../components/email/Media";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return <PreviewLayout inline={inline}>{children}</PreviewLayout>;
+};
+
+# Video
+
+A card layout featuring a media preview image with a call-to-action.
+
+Used to guide readers to view a video on the web.
+
+### Usage Note
+
+Add a divider (bottom border) when a stronger separation between modules is required.
+
+For example, add a divider when the media module appears above a bulleted list.
+
+## Guidelines
+
+-   Choose an effective poster image to represent your video
+-   Ensure your poster image features a "play" icon or similar to indicate video media
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/ea5a469"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="media" Component={Media} />
+
+## HTML
+
+<PreviewMarkup label="media" template={template} />

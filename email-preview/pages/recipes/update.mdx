@@ -1,0 +1,38 @@
+import Update, { Features, template } from "../../components/recipes/Update";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Updates: Products and Services
+
+This recipe informs users about service updates with a visual format that highlights key information and account status.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/6756fca"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="update" Component={Update} />
+
+## HTML
+
+<PreviewMarkup label="update" template={template} />

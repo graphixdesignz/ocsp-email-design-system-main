@@ -1,0 +1,34 @@
+import Survey, { Features, template } from "../../components/email/Survey";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return <PreviewLayout inline={inline}>{children}</PreviewLayout>;
+};
+
+# Survey
+
+This module features a headline question, horizontal boxes with 1–10, and a centered CTA button.
+
+<LinkButton
+    href="https://litmus.com/checklist/public/LKpZEqcFS63Ktghb"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="survey" Component={Survey} />
+
+## HTML
+
+<PreviewMarkup label="survey" template={template} />

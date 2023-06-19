@@ -1,0 +1,6 @@
+[build]
+    base="email-preview/"
+    publish = ".next"
+    command = "next build"
+[[plugins]]
+    package = "@netlify/plugin-nextjs"

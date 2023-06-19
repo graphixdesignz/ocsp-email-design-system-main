@@ -1,0 +1,92 @@
+<mjml>
+    <mj-head>
+        <mj-title>Example Branding</mj-title>
+        <mj-font
+            name="forma-djr-micro"
+            href="https://use.typekit.net/wsp0fpl.css"
+        />
+        <mj-attributes>
+            <mj-section padding="0" />
+            <mj-text font-size="15px" line-height="15px" padding="30px" />
+            <mj-class
+                name="headline"
+                font-family="forma-djr-display, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+                font-size="80px"
+                line-height="80px"
+                padding="30px"
+            />
+            <mj-class
+                name="sub-head"
+                font-family="forma-djr-display, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+                font-size="40px"
+                line-height="40px"
+            />
+            <mj-class
+                name="title"
+                font-family="forma-djr-display, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+                font-size="20px"
+                line-height="20px"
+            />
+            <mj-all
+                font-family="forma-djr-micro, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+            />
+        </mj-attributes>
+    </mj-head>
+    <mj-body background-color="#ffffff">
+        <mj-section>
+            <mj-column>
+                <mj-table cellpadding="0" cellspacing="0" padding="0">
+                    <tr>
+                        <td
+                            valign="middle"
+                            align="left"
+                            bgcolor="#FFBD3A"
+                            style="
+                                vertical-align: middle;
+                                padding: 15px;
+                                font-family: forma-djr-display, Helvetica,
+                                    Helvetica Neue, Arial, Roboto, sans-serif;
+                                font-size: 30px;
+                                line-height: 30px;
+                            "
+                        >
+                            Consectetur ullamco officia
+                        </td>
+                        <td
+                            valign="middle"
+                            align="left"
+                            bgcolor="#ffd175"
+                            style="
+                                vertical-align: middle;
+                                padding: 15px;
+                                font-family: forma-djr-micro, Helvetica,
+                                    Helvetica Neue, Arial, Roboto, sans-serif;
+                                font-size: 15px;
+                                line-height: 15px;
+                            "
+                        >
+                            Irure exercitation duis consequat amet.
+                        </td>
+                        <td
+                            valign="middle"
+                            align="center"
+                            width="100"
+                            bgcolor="#ffde9d"
+                            style="
+                                vertical-align: middle;
+                                text-align: center;
+                                padding: 15px;
+                            "
+                        >
+                            <img
+                                src="https://eroi-s3.s3-us-west-2.amazonaws.com/hp/email-design-system/HPR_Black.png"
+                                width="80"
+                                height="80"
+                            />
+                        </td>
+                    </tr>
+                </mj-table>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>

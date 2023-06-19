@@ -1,0 +1,44 @@
+import AcquisitionRecoOffer1, {
+    Features,
+    template,
+} from "../../components/recipes/AcquisitionRecoOffer1";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Acquisition Recipe: Reco / Offer #1
+
+This recipe leads with an offer, followed by related HP product information and images, to entice users to engage.
+
+<LinkButton
+    href="https://litmus.com/checklist/public/F6p8wiYOBHw3Zfc5"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent
+    label="acquisitionrecooffer1"
+    Component={AcquisitionRecoOffer1}
+/>
+
+## HTML
+
+<PreviewMarkup label="acquisitionrecooffer1" template={template} />

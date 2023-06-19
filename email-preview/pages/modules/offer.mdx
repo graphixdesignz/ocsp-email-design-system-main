@@ -1,0 +1,39 @@
+import Offer, { Features, template } from "../../components/email/Offer";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return <PreviewLayout inline={inline}>{children}</PreviewLayout>;
+};
+
+# Offer
+
+This module features a promotional message on a colored background to draw attention.
+
+## Guidelines
+
+-   Editors can choose to use a color variant. The color is dictated by the Signifier color.
+-   We recommend keeping the offer message short and succinct to avoid creating extra scrolling space for users.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/089e5a8"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="offer" Component={Offer} />
+
+## HTML
+
+<PreviewMarkup label="offer" template={template} />

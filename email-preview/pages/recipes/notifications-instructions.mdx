@@ -1,0 +1,44 @@
+import NotificationsInstructions, {
+    Features,
+    template,
+} from "../../components/recipes/NotificationsInstructions";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Notifications: Trouble State With Instructions
+
+This recipe delivers a short alert message to inform users of a problem and includes step-by-step instructions for how to resolve it.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/QZyYJItk2DJ7O1pX"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent
+    label="notificationsnstructions"
+    Component={NotificationsInstructions}
+/>
+
+## HTML
+
+<PreviewMarkup label="notificationsinstructions" template={template} />

@@ -1,0 +1,53 @@
+<mjml>
+    <mj-head>
+        <mj-title>Example Branding</mj-title>
+        <mj-font name="FormaDJRm" href="https://use.typekit.net/wsp0fpl.css" />
+        <mj-attributes>
+            <mj-section padding="0" />
+            <mj-text font-size="15px" line-height="15px" padding="30px" />
+            <mj-class
+                name="headline"
+                font-family="forma-djr-display, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+                font-size="80px"
+                line-height="80px"
+                padding="30px"
+            />
+            <mj-class
+                name="sub-head"
+                font-family="forma-djr-display, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+                font-size="40px"
+                line-height="40px"
+            />
+            <mj-class
+                name="title"
+                font-family="forma-djr-display, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+                font-size="20px"
+                line-height="20px"
+            />
+            <mj-all
+                font-family="forma-djr-micro, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+            />
+        </mj-attributes>
+    </mj-head>
+    <mj-body background-color="#ffffff">
+        <mj-section>
+            <mj-column background-color="#E6E6E6" border="1px solid black">
+                <mj-text mj-class="headline"
+                    >HP ENVY 34&#x2BA; All-In-One</mj-text
+                >
+                <mj-spacer height="1px" container-background-color="#000000" />
+                <mj-text mj-class="sub-head"
+                    >Nisi enim amet tempor aute do do eu sunt sit est
+                    adipisicing.</mj-text
+                >
+                <mj-image
+                    align="left"
+                    padding="90px 0px 15px 15px"
+                    src="https://eroi-s3.s3-us-west-2.amazonaws.com/hp/email-design-system/HPR_Black.png"
+                    width="80px"
+                    height="80px"
+                />
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>

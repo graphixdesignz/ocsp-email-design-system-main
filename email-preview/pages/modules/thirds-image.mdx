@@ -1,0 +1,53 @@
+import ThirdsImage, {
+    Features,
+    template,
+} from "../../components/email/ThirdsImage";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return <PreviewLayout inline={inline}>{children}</PreviewLayout>;
+};
+
+# Thirds Image Card
+
+A card layout with an image displayed ⅓ of the width.
+
+The Thirds Image Card is responsive, in that the image and layout will scale down to mobile, but the layout is
+static or fixed - that is the image will _not_ stack over the copy. Think of the Thirds Image card like a large CTA with additional detail.
+
+## Usage
+
+The Thirds Image card works best in series with other Thirds Image cards, alternating left-to-right layout,
+to create a river-flow style layout.
+
+Use to link to equal-priority items in a newsletter, or to emumerate equal-priority features in a product or service.
+
+## Guidelines
+
+-   Recommended image size is proportional to 408px wide by 600px tall (to display at 204px x 300px on high resolution displays).
+-   Recommend a short headline. When a short headline is not available, forgo the headline for copy.
+-   When using a CTA / button, consider linking the image for greater acccessibility
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/a49f5a8"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="thirdsImage" Component={ThirdsImage} />
+
+## HTML
+
+<PreviewMarkup label="thirdsImage" template={template} />

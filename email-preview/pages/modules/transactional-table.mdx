@@ -1,0 +1,38 @@
+import TransactionalTable, {
+    Features,
+    template,
+} from "../../components/email/TransactionalTable";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return <PreviewLayout inline={inline}>{children}</PreviewLayout>;
+};
+
+# Transactional Table
+
+Summarize the bill for a service or product with the Transactional Table module.
+Module includes an optional subhead and body paragraph as well as a CTA to direct customers to an order detail page or similar service.
+
+<LinkButton
+    href="https://litmus.com/checklist/public/9lSvh7MXQ6qWdg7F"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="transactionaltable" Component={TransactionalTable} />
+
+## HTML
+
+<PreviewMarkup label="transactionaltable" template={template} />

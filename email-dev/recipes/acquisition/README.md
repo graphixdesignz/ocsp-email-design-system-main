@@ -1,0 +1,2 @@
+-   Product: https://litmus.com/checklist/emails/public/c80f34a
+-   Info: https://litmus.com/checklist/emails/public/ad94809

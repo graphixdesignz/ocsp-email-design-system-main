@@ -1,0 +1,41 @@
+import OnboardingAddOn, {
+    Features,
+    template,
+} from "../../components/recipes/OnboardingAddOn";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Onboarding: Service or Product Add-on
+
+This recipe combines imagery and a list format to suggest additional products or services a user might want to purchase.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/tnKgGbNk7ighOOVE"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="onboardingaddon" Component={OnboardingAddOn} />
+
+## HTML
+
+<PreviewMarkup label="onboardingaddon" template={template} />

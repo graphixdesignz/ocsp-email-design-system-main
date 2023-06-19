@@ -1,0 +1,41 @@
+import EndOfLifeOrder, {
+    Features,
+    template,
+} from "../../components/recipes/EndOfLifeOrder";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# End of Life: Multiple Actions
+
+This recipe acknowledges a user who has recently left and provides a more detailed list of steps to close the account.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/3a8ab99"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="endoflifeorder" Component={EndOfLifeOrder} />
+
+## HTML
+
+<PreviewMarkup label="endoflifeorder" template={template} />

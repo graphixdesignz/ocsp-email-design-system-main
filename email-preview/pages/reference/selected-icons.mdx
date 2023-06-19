@@ -1,0 +1,38 @@
+import LinkButton from "../../components/LinkButton";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import IconPreview from "../../components/IconPreview";
+export default ({ inline, children }) => (
+    <PreviewLayout inline={inline} tools>
+        {children}
+    </PreviewLayout>
+);
+
+# Selected Icons
+
+There are several places where icons can be used in this system. Here are the best ways to use them.
+
+<LinkButton href="/Icons.zip" download label="Download" />
+
+## Usage
+
+-   With the HP Visual Identity System, you can choose from over 300 brand icons.
+-   Make sure you only use the icons designated by HP (see link below). Do not create or use any other icons.
+-   Do not use icons in other modules aside from the Icon Link and Icon List modules.
+
+## Guidelines
+
+-   Choose icons that correlate with the benefit or feature that you’re highlighting.
+-   Icons are formatted with matching stroke widths. Please do not resize icons.
+-   Icon’s color matches the Signifier’s color.
+
+# Preview
+
+## Icons for use in Icon Lists
+
+<IconPreview use="list" style="color" />
+<IconPreview use="list" style="white" />
+
+## Icons for use in Icon Link List
+
+<IconPreview use="link" style="color" />
+<IconPreview use="link" style="white" />

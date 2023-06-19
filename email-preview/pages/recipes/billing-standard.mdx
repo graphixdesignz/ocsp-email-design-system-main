@@ -1,0 +1,41 @@
+import BillingStandard, {
+    Features,
+    template,
+} from "../../components/recipes/BillingStandard";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Billing: Standard Invoices
+
+This recipe delivers basic billing information to users in a copy-only format and allows them to click to see further detaiils.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/cfc46f9"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="billingstandard" Component={BillingStandard} />
+
+## HTML
+
+<PreviewMarkup label="billingstandard" template={template} />

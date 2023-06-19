@@ -1,0 +1,44 @@
+import CoBrandOnboardingGettingStarted, {
+    Features,
+    template,
+} from "../../components/recipes/CoBrandOnboardingGettingStarted";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Co-branded: Onboarding: Getting Started (Bundle)
+
+This recipe blends visual elements and written instructions to help users get set up with multiple products or services.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/4tBNK6m9q4ttKc1D"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent
+    label="cobrandonboardinggettingstarted"
+    Component={CoBrandOnboardingGettingStarted}
+/>
+
+## HTML
+
+<PreviewMarkup label="cobrandonboardinggettingstarted" template={template} />

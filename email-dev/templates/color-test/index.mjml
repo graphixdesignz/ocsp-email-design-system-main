@@ -1,0 +1,269 @@
+<mjml>
+    <mj-head>
+        <mj-font name="FormaDJRm" href="https://use.typekit.net/wsp0fpl.css" />
+        <mj-title>Example Branding</mj-title>
+        <mj-attributes>
+            <mj-section padding="0" />
+            <mj-text font-size="15px" line-height="15px" padding="30px" />
+            <mj-class
+                name="headline"
+                font-family="forma-djr-display, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+                font-size="80px"
+                line-height="80px"
+                padding="30px"
+            />
+            <mj-class
+                name="sub-head"
+                font-family="forma-djr-display, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+                font-size="40px"
+                line-height="40px"
+            />
+            <mj-class
+                name="title"
+                font-family="forma-djr-display, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+                font-size="20px"
+                line-height="20px"
+            />
+            <mj-all
+                font-family="forma-djr-micro, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+            />
+            <mj-text padding="20px" />
+        </mj-attributes>
+    </mj-head>
+    <mj-body background-color="#ffffff">
+        <mj-section>
+            <mj-column
+                background-color="#F0F0F0"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #F0F0F0</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #F0F0F0</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#0096D6"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #0096D6</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #0096D6</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#00D072"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #00D072</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #00D072</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#4759F5"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #4759F5</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #4759F5</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#549EF7"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #549EF7</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #549EF7</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#40DEFA"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #40DEFA</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #40DEFA</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#4EF5AB"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #4EF5AB</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #4EF5AB</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#83F955"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #83F955</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #83F955</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#D3FB66"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #D3FB66</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #D3FB66</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#B655F5"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #B655F5</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #B655F5</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#A89EFA"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #A89EFA</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #A89EFA</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#FF63BB"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #FF63BB</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #FF63BB</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#FF84FF"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #FF84FF</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #FF84FF</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#FF876B"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #FF876B</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #FF876B</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#FF8900"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #FF8900</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #FF8900</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#FFBD3B"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #FFBD3B</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #FFBD3B</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#FFE137"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #FFE137</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #FFE137</mj-text
+                >
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column
+                background-color="#FCF54B"
+                border-bottom="1px solid black"
+            >
+                <mj-text mj-class="heading" color="#000000"
+                    >Color: #FCF54B</mj-text
+                >
+                <mj-text mj-class="heading" color="#FFFFFF"
+                    >Color: #FCF54B</mj-text
+                >
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>

@@ -1,0 +1,43 @@
+import DualImage, {
+    Features,
+    template,
+} from "../../components/email/DualImage";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return <PreviewLayout inline={inline}>{children}</PreviewLayout>;
+};
+
+# Dual Image
+
+Two horizontal columns featuring an image, subhead, copy, and a soft CTA.
+Useful for linking to content of equal priority, e.g. two articles on a common topic.
+
+## Guidelines
+
+-   Images in each column should have the same dimensions.
+-   Recommend images with a 4:3 aspect ratio
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/50d727f"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="dualimage" Component={DualImage} />
+
+## HTML
+
+<PreviewMarkup label="dualimage" template={template} />

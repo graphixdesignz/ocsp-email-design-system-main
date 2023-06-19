@@ -1,0 +1,41 @@
+import SurveyStandard, {
+    Features,
+    template,
+} from "../../components/recipes/SurveyStandard";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Survey Recipe: Standard
+
+This recipe uses a hero module and survey module to track a user’s satisfaction with their HP experience.
+
+<LinkButton
+    href="https://litmus.com/checklist/public/OPbEn4WC34jKqfVD"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="surveystandard" Component={SurveyStandard} />
+
+## HTML
+
+<PreviewMarkup label="surveystandard" template={template} />

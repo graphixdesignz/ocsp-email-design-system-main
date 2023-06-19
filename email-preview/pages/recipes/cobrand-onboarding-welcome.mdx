@@ -1,0 +1,44 @@
+import CoBrandOnboardingWelcome, {
+    Features,
+    template,
+} from "../../components/recipes/CoBrandOnboardingWelcome";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Co-branded: Onboarding: Welcome
+
+This recipe uses a simple, text-based format to welcome new users of multiple products or services.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/pBPSyD9a4coWQl97"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent
+    label="cobrandonboardingwelcome"
+    Component={CoBrandOnboardingWelcome}
+/>
+
+## HTML
+
+<PreviewMarkup label="cobrandonboardingwelcome" template={template} />

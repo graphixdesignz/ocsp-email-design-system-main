@@ -1,0 +1,41 @@
+import UsageMultiple, {
+    Features,
+    template,
+} from "../../components/recipes/UsageMultiple";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Usage: Standard Recommendations
+
+This recipe helps users understand their usage, explains how they can learn more, and suggests multiple next steps they may want to take.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/7e4522c"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="usagemultiple" Component={UsageMultiple} />
+
+## HTML
+
+<PreviewMarkup label="usagemultiple" template={template} />

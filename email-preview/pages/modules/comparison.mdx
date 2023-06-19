@@ -1,0 +1,44 @@
+import Comparison, {
+    Features,
+    template,
+} from "../../components/email/Comparison";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return <PreviewLayout inline={inline}>{children}</PreviewLayout>;
+};
+
+# Comparison
+
+Similar to the Dual Image module, the Comparison module places two columns with images side by side.
+This module differs from Dual Image in that it supports more detailed content with the intention
+of drawing comparisons between products or services.
+
+## Guidelines
+
+-   Images in each column should have the same dimensions.
+-   Recommend images with a 4:3 aspect ratio
+
+<LinkButton
+    href="https://litmus.com/checklist/public/ev3ztPJDLtHdAJdT"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="comparison" Component={Comparison} />
+
+## HTML
+
+<PreviewMarkup label="comparison" template={template} />

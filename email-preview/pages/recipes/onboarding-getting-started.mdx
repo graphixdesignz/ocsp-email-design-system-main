@@ -1,0 +1,44 @@
+import OnboardingGettingStarted, {
+    Features,
+    template,
+} from "../../components/recipes/OnboardingGettingStarted";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Onboarding: Getting Started
+
+This recipe continues the user onboarding experience by providiing next steps for getting started with a product or service.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/SrnZOWAMt2R84ypa"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent
+    label="onboardinggettingstarted"
+    Component={OnboardingGettingStarted}
+/>
+
+## HTML
+
+<PreviewMarkup label="onboardinggettingstarted" template={template} />

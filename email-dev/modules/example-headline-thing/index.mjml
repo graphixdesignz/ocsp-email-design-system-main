@@ -1,0 +1,85 @@
+<mjml>
+    <mj-head>
+        <mj-title>Example Branding</mj-title>
+        <mj-font
+            name="forma-djr-micro"
+            href="https://use.typekit.net/wsp0fpl.css"
+        />
+        <mj-attributes>
+            <mj-section padding="0" />
+            <mj-text font-size="15px" line-height="15px" padding="10px" />
+            <mj-class
+                name="headline"
+                font-family="forma-djr-display, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+                font-size="80px"
+                line-height="80px"
+                padding="30px"
+            />
+            <mj-class
+                name="sub-head"
+                font-family="forma-djr-display, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+                font-size="40px"
+                line-height="40px"
+            />
+            <mj-class
+                name="title"
+                font-family="forma-djr-display, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+                font-size="20px"
+                line-height="20px"
+            />
+            <mj-all
+                font-family="forma-djr-micro, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+            />
+        </mj-attributes>
+    </mj-head>
+    <mj-body background-color="#ffffff">
+        <mj-section>
+            <mj-column>
+                <mj-text text-decoration="underline">
+                    <p>Conventional CSS Underline</p>
+                    <p>
+                        Qui Lorem laboris deserunt amet non sit laborum commodo
+                        anim ut velit laboris minim pariatur.
+                    </p>
+                </mj-text>
+                <mj-text>
+                    <p><u>U tag</u></p>
+                    <u
+                        >Qui Lorem laboris deserunt amet non sit laborum commodo
+                        anim ut velit laboris minim pariatur.</u
+                    >
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column>
+                <mj-text mj-class="sub-head">Inserted Divider</mj-text>
+                <mj-divider padding="0" border-width="1px" />
+                <mj-text>Runs the risk of wrapping</mj-text>
+                <mj-divider padding="0" border-width="1px" />
+                <mj-text>Requires manual assembly by author…</mj-text>
+                <mj-divider padding="0" border-width="1px" />
+                <mj-text>or a fixed number of "slots" for text</mj-text>
+                <mj-divider padding="0" border-width="1px" />
+                <mj-text>Burma-Shave</mj-text>
+                <mj-divider padding="0" border-width="1px" />
+                <mj-spacer height="80px" />
+            </mj-column>
+        </mj-section>
+        <mj-section
+            padding="0"
+            background-position="top left"
+            background-url="https://eroi-s3.s3-us-west-2.amazonaws.com/hp/email-design-system/background-lines.png"
+        >
+            <mj-column>
+                <mj-text line-height="20px" padding="0">
+                    Background Image<br /><br />
+                    Qui Lorem laboris deserunt amet non sit laborum commodo anim
+                    ut velit laboris minim pariatur.<br />
+                    Requires strict line height and font size. May not work in
+                    Outlook.
+                </mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>

@@ -1,0 +1,46 @@
+import Signifier, {
+    Features,
+    template,
+} from "../../components/email/Signifier";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Signifier
+
+Brand and business unit identifier, typically used at the top of an email. May also be used as an interstitial between multiple sections in a larger newsletter.
+
+## Guidelines
+
+-   When using HP grey as the primary color, a divider appears to the left of the HP Logo for the Logo and Logo + BU variants.
+    Other colors differentiate these regions with color tints.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/ac904f0"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="signifier" Component={Signifier} />
+
+## HTML
+
+<PreviewMarkup label="signifier" template={template} />

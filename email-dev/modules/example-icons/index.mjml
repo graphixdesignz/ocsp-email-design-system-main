@@ -1,0 +1,87 @@
+<mjml>
+    <mj-head>
+        <mj-title>Example Branding</mj-title>
+        <mj-font
+            name="forma-djr-micro"
+            href="https://use.typekit.net/wsp0fpl.css"
+        />
+        <mj-attributes>
+            <mj-section padding="0" />
+            <mj-text font-size="15px" line-height="15px" padding="10px" />
+            <mj-class
+                name="headline"
+                font-family="forma-djr-display, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+                font-size="80px"
+                line-height="80px"
+                padding="30px"
+            />
+            <mj-class
+                name="sub-head"
+                font-family="forma-djr-display, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+                font-size="40px"
+                line-height="40px"
+            />
+            <mj-class
+                name="title"
+                font-family="forma-djr-display, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+                font-size="20px"
+                line-height="20px"
+            />
+            <mj-all
+                font-family="forma-djr-micro, Helvetica, Helvetica Neue, Arial, Roboto, sans-serif"
+            />
+        </mj-attributes>
+    </mj-head>
+    <mj-body background-color="#ffffff">
+        <mj-section>
+            <mj-group>
+                <mj-column>
+                    <mj-image
+                        src="https://eroi-s3.s3-us-west-2.amazonaws.com/hp/email-design-system/icons-outline/accountgrey.png"
+                        height="33px"
+                        width="33px"
+                    />
+                </mj-column>
+                <mj-column>
+                    <mj-image
+                        src="https://eroi-s3.s3-us-west-2.amazonaws.com/hp/email-design-system/icons-outline/billinggrey.png"
+                        height="33px"
+                        width="33px"
+                    />
+                </mj-column>
+                <mj-column>
+                    <mj-image
+                        src="https://eroi-s3.s3-us-west-2.amazonaws.com/hp/email-design-system/icons-outline/supportgrey.png"
+                        height="33px"
+                        width="33px"
+                    />
+                </mj-column>
+            </mj-group>
+        </mj-section>
+        <mj-section>
+            <mj-group>
+                <mj-column>
+                    <mj-image
+                        src="https://eroi-s3.s3-us-west-2.amazonaws.com/hp/email-design-system/icons-enclosed/account.png"
+                        height="33px"
+                        width="33px"
+                    />
+                </mj-column>
+                <mj-column>
+                    <mj-image
+                        src="https://eroi-s3.s3-us-west-2.amazonaws.com/hp/email-design-system/icons-enclosed/billing.png"
+                        height="33px"
+                        width="33px"
+                    />
+                </mj-column>
+                <mj-column>
+                    <mj-image
+                        src="https://eroi-s3.s3-us-west-2.amazonaws.com/hp/email-design-system/icons-enclosed/support.png"
+                        height="33px"
+                        width="33px"
+                    />
+                </mj-column>
+            </mj-group>
+        </mj-section>
+    </mj-body>
+</mjml>

@@ -1,0 +1,39 @@
+import DynamicHeadline, {
+    Features,
+    template,
+} from "../../components/email/DynamicHeadline";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return <PreviewLayout inline={inline}>{children}</PreviewLayout>;
+};
+
+# Dynamic Headline
+
+While any module _may_ contain dynamic or personalized content, the Dynamic Headline module demonstrates how and where personalized content should be placed and used.
+
+Look for the Dynamic Headline module in email recipes for indication of where personalized content should be used.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/80059ef"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="dynamicheadline" Component={DynamicHeadline} />
+
+## HTML
+
+<PreviewMarkup label="dynamicheadline" template={template} />

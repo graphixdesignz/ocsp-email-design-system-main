@@ -1,0 +1,44 @@
+import CoBrandConfirmationOrder, {
+    Features,
+    template,
+} from "../../components/recipes/CoBrandConfirmationOrder";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Co-Branded: Shipping Recipe: Standard Order Confirmation
+
+This recipe informs users that their order of multiple products or services was successful. It also provides supporting information with a mix of copy and images.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/y7jdbkypLOlHRBKK"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent
+    label="cobrandconfirmationorder"
+    Component={CoBrandConfirmationOrder}
+/>
+
+## HTML
+
+<PreviewMarkup label="cobrandconfirmationorder" template={template} />

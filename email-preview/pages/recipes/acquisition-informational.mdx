@@ -1,0 +1,44 @@
+import AcquisitionInformational, {
+    Features,
+    template,
+} from "../../components/recipes/AcquisitionInformational";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Acquisition Recipe: Information Driven
+
+This recipe leads with HP product information, including key features, benefits, and images, while also providing more in-depth copy.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/ad94809"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent
+    label="aquisitioninformational"
+    Component={AcquisitionInformational}
+/>
+
+## HTML
+
+<PreviewMarkup label="aquisitioninformational" template={template} />

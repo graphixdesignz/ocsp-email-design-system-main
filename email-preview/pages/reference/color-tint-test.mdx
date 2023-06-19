@@ -1,0 +1,33 @@
+import ColorTintTest, {
+    template,
+    html,
+} from "../../components/email/ColorTintTest";
+import LinkButton from "../../components/LinkButton";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => (
+    <PreviewLayout inline={inline}>{children}</PreviewLayout>
+);
+
+# Color tests
+
+This template displays a selection of Visual ID primary colors, in various tints, paired with black text.
+
+The purpose of this template is for testing colors across email clients in dark mode.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/1e94f99"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Preview
+
+<PreviewComponent label="colortinttest" Component={ColorTintTest} />
+
+## HTML
+
+<PreviewMarkup label="colortinttest" template={template} />

@@ -1,0 +1,41 @@
+import AcquisitionProduct, {
+    Features,
+    template,
+} from "../../components/recipes/AcuisitionProduct";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Acquisition Recipe: Product Driven
+
+This recipe leads with HP product information, including key features, benefits, and a variety of product imagery, to engage new and existing users.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/c80f34a"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="aquisitionproduct" Component={AcquisitionProduct} />
+
+## HTML
+
+<PreviewMarkup label="aquisitionproduct" template={template} />

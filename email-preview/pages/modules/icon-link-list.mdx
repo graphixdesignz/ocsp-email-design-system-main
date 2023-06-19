@@ -1,0 +1,46 @@
+import IconLinkList, {
+    Features,
+    template,
+} from "../../components/email/IconLinkList";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Icon Link List
+
+A horizontal list of icons with links. Typically used as a pre-footer.
+
+## Guidelines
+
+-   Link labels should be 14 characters or less.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/9f3623f"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="iconLinkList" Component={IconLinkList} />
+
+## HTML
+
+<PreviewMarkup label="iconLinkList" template={template} />

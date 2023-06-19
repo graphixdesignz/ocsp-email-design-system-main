@@ -1,0 +1,43 @@
+import Editorial, {
+    Features,
+    template,
+} from "../../components/email/Editorial";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return <PreviewLayout inline={inline}>{children}</PreviewLayout>;
+};
+
+# Editorial
+
+The Editorial module introduces long-form editorial content. Entice readers to read an article with an image, headline, and descriptive eyebrow text.
+
+## Guidelines
+
+-   Author and eyebrow are optional
+-   Eyebrow text should be UPPERCASE
+-   Recommend image with a 4:3 aspect ratio
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/c6f69b1"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="editorial" Component={Editorial} />
+
+## HTML
+
+<PreviewMarkup label="editorial" template={template} />

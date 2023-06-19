@@ -1,0 +1,14 @@
+{
+    "name": "email-dev",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "type": "module",
+    "dependencies": {
+        "dotenv": "^16.0.1",
+        "lodash": "^4.17.21",
+        "map-stream": "^0.0.7",
+        "node-mailjet": "^5.1.1",
+        "vinyl-fs": "^3.0.3"
+    }
+}

@@ -1,0 +1,44 @@
+import AccountMaintenanceDetailed, {
+    Features,
+    template,
+} from "../../components/recipes/AccountMaintenanceDetailed";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Account Maintenance: Detailed
+
+This recipe informs users about account changes using a list format that allows for more detailed information or instructions.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/e7c0768"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent
+    label="accountmaintenancedetailed"
+    Component={AccountMaintenanceDetailed}
+/>
+
+## HTML
+
+<PreviewMarkup label="accountmaintenancedetailed" template={template} />

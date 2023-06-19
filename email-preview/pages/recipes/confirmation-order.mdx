@@ -1,0 +1,41 @@
+import ConfirmationOrder, {
+    Features,
+    template,
+} from "../../components/recipes/ConfirmationOrder";
+import LinkButton from "../../components/LinkButton";
+import Markup from "../../components/Markup";
+import PreviewLayout from "../../components/email/PreviewLayout";
+import ToggleSwitch from "../../components/ToggleSwitch";
+import {
+    PreviewComponent,
+    PreviewMarkup,
+} from "../../components/PreviewContext";
+export default ({ inline, children }) => {
+    return (
+        <PreviewLayout inline={inline} tools>
+            {children}
+        </PreviewLayout>
+    );
+};
+
+# Shipping Recipe: Order Confirmation
+
+This recipe informs users that their order was successful and provides relevant details, supporting information, or next steps with a mix of copy and images.
+
+<LinkButton
+    href="https://litmus.com/checklist/emails/public/a061994"
+    target="_blank"
+    label="View in Litmus"
+/>
+
+## Features
+
+<Features />
+
+## Preview
+
+<PreviewComponent label="confirmationorder" Component={ConfirmationOrder} />
+
+## HTML
+
+<PreviewMarkup label="confirmationorder" template={template} />

@@ -1,0 +1,2 @@
+-   Multiple: https://litmus.com/checklist/emails/public/3a8ab99
+-   Single: https://litmus.com/checklist/emails/public/039940a
